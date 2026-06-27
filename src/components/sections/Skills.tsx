@@ -97,7 +97,7 @@ export default function Skills() {
   const languages: Tech[] = [
     { label: "English", logoSrc: "/logos/Eng.png" },
     { label: "Hindi/हिंदी", logoSrc: "/logos/hindi.png" },
-    { label: "Sanskrit/संस्कृतम्", logoSrc: "/logos/sanskrit.jpg" }
+   // { label: "Sanskrit/संस्कृतम्", logoSrc: "/logos/sanskrit.jpg" }
   ];
 
   const programming: Tech[] = [
@@ -105,6 +105,7 @@ export default function Skills() {
     { label: "C++", logoSrc: "/logos/cpp.png" },
     { label: "JavaScript", logoSrc: "/logos/js.png" },
     { label: "Java", logoSrc: "/logos/java.png" },
+    { label: "Solidity", logoSrc: "/logos/solidity.png" },
     { label: "Kotlin", logoSrc: "/logos/kotlin.jpg" }
     
   ];
@@ -113,24 +114,30 @@ export default function Skills() {
     { label: "React", logoSrc: "/logos/react.png" },
     { label: "Django", logoSrc: "/logos/django.png" },
     { label: "Flask", logoSrc: "/logos/flask.png" },
+    { label: "FastAPI", logoSrc: "/logos/fastapi.png" }
    // { label: "WebRTC", logoSrc: "/logos/webrtc.jpg" }
   ];
 
   const dataML: Tech[] = [
     { label: "LangChain",  logoSrc: "/logos/langchain.png"},
+    { label: "LangGraph", logoSrc: "/logos/langgraph.png" },
     { label: "PyTorch", logoSrc: "/logos/pytorch.jpg" },
     { label: "RAG", logoSrc: "/logos/rag.jpeg" }, 
     { label: "LightGBM",  logoSrc: "/logos/light.png"},
     { label: "OpenCV", logoSrc: "/logos/opencv.png" },
+    { label: "Ollama", logoSrc: "/logos/ollama.png" }
        
   ];
 
   const web3: Tech[] = [
     { label: "Web3.py" },
+    { label: "Solidity", logoSrc: "/logos/solidity.png" },
+    { label: "Ganache", logoSrc: "/logos/ganache.png" },
+    { label: "Hardhat", logoSrc: "/logos/hardhat.png" },
     { label: "IPFS", logoSrc: "/logos/ipfs.png" },
-    { label: "MetaMask", logoSrc: "/logos/metamask.png" },
-    { label: "QuickNode", logoSrc: "/logos/quicknode.jpg" },
-    { label: "Dune", logoSrc: "/logos/dune.jpg" }
+    { label: "MetaMask", logoSrc: "/logos/metamask.png" }
+    // { label: "QuickNode", logoSrc: "/logos/quicknode.jpg" },
+    // { label: "Dune", logoSrc: "/logos/dune.jpg" }
   ];
 
   const devops: Tech[] = [
@@ -138,13 +145,16 @@ export default function Skills() {
     { label: "Git", logoSrc: "/logos/git.png" },
     { label: "LangGraph", logoSrc: "/logos/langgraph.png"},
     { label: "Docker", logoSrc: "/logos/docker.png" },
-    { label: "n8n", logoSrc: "/logos/n8n.jpg" }
+    { label: "n8n", logoSrc: "/logos/n8n.jpg" },
+    { label: "Linux", logoSrc: "/logos/linux.png" }
   ];
 
   const tools: Tech[] = [
     { label: "Power BI", logoSrc: "/logos/powerbi.png" },
     { label: "Pinecone", logoSrc: "/logos/pinecone.png" },
     { label: "Excel", logoSrc: "/logos/excel.jpg" },
+    { label: "VS Code", logoSrc: "/logos/vscode.png" },
+    { label: "Postman", logoSrc: "/logos/postman.png" }
     //{ label: "ComfyUI" },
     //{ label: "GenAI" }
   ];
@@ -179,15 +189,15 @@ export default function Skills() {
           <Wrap items={frameworks} />
 
           <div className="badge" style={{ marginTop: 18 }}>
-           AI / ML
+           AI Systems & LLM Engineering
           </div>
           <Wrap items={dataML} />
         </div>
 
-      {/* <div className="card frame skillsCard">
-          <div className="badge">Web3</div>
+      <div className="card frame skillsCard">
+          <div className="badge">Blockchain & Decentralized Systems</div>
           <Wrap items={web3} />
-        </div> */}
+        </div>
 
         <div className="card frame skillsCard">
           <div className="badge">Systems & Deployment</div>

@@ -336,6 +336,21 @@ export default function Projects() {
       <div className="projectsGrid">
 
         <ProjectCard
+          title="Decentralized LLM Multi-Agent System"
+          subtitle="Research Project at IIT Patna • Decentralized and self-improving LLM agent framework"    
+          link="(will be live soon)"
+          bgVideoSrc={withBase("videos/llm-mas.mp4")}
+          poster={withBase("posters/defi.jpg")}
+          bullets={[
+            "Built a decentralized LLM multi-agent framework with utility-based task bidding and autonomous collaboration.",
+            "Introduced memory-assisted learning with capability adaptation and failure recovery mechanisms.",
+            "Implemented deterministic real-task evaluation with blockchain-based reputation and interaction logging."
+          ]}
+
+          tags={["Python","Solidity","Blockchain","LLMs","Hardhat","Ganache","Ollama", "Multi-Agent Systems"]}
+        />
+
+        <ProjectCard
           title="PixelNerve AI Agent"
           subtitle="Company-focused AI assistant for knowledge retrieval & intelligent workflows"
           link="https://huggingface.co/spaces/Kuki10/ai-agent"
